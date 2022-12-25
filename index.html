@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productsList</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="products">
+            <h1 class="products__title">list of products</h1>
+            <div class="products__customization">
+                <div class="customization__enter-count">
+                    <div class="enter-count__input-block">
+                        <div class="input-block__title">Введите количество элементов:</div>
+                        <input onkeypress="return  event.charCode >= 48 && event.charCode <= 57"
+                            class="enter-count__input" placeholder="введите от 1 до 100" type="text">
+                        <span class="input-block__warning">неправильные данные!</span>
+                    </div>
+                    <button class="enter-count__button">найти</button>
+                </div>
+                <div class="customization__separator"></div>
+                <div class="customization__sort">
+                    <h4 class="sort__title">Сортировка:</h4>
+                    <div class="sort__block">
+                        <select name="products" class="sort__select">
+                            <option value="SORT-BY-NAMED">по названию</option>
+                            <option value="SORT-FIRST-CHEAP">сначала дешевые</option>
+                            <option value="SORT-EXPENSIVE-FIRST">сначала дорогие</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <ul class="products__list">
+
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <script type='module' src="./js/index.js"></script>
+
+</body>
+
+</html>

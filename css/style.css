@@ -1,0 +1,134 @@
+.container {
+    max-width: 1170px;
+    margin: 20px auto;
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.products__list {
+    margin-bottom: 200px;
+    font-size: 20px;
+}
+.product {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+}
+.product__description {
+    position: absolute;
+    right: 0;
+    transition: all 0.7s;
+    transform: translateX(110%);
+    width: 450px;
+    min-height: 200px;
+    border: solid blue 2px;
+    padding: 20px;
+    display: none;
+    border-radius: 5px;
+
+}
+.product__title {
+    width: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.4s;
+}
+.product__title:hover {
+    border-color: blue;
+}
+.description__parameter {
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.description .item_parameter:last-child {
+    margin: 0;
+}
+.parameter__name {
+    font-weight: bold;
+    width: 150px;
+    margin-right: 20px;
+}
+.parameter__value {
+    display: flex;
+    width: 300px;
+}
+.product_selected {
+    opacity: 0.6;
+  }
+.products__customization {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: stretch;
+}
+.customization__enter-count {
+    display: flex;
+    align-items: center;
+}
+.enter-count__input-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.input-block__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.enter-count__button {
+    background-color: rgb(109, 109, 235);
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.enter-count__button:hover {
+    background-color: rgb(50, 50, 233);
+}
+.enter-count__input {
+    border: solid 2px rgb(109, 109, 235);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+.enter-count__input:focus {
+    border: solid 2px rgb(50, 50, 233);
+}
+.input-block__warning {
+    color: red;
+    opacity: 0;
+}
+.sort__title {
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sort__select {
+    font-size: 16px;
+    border: solid 1px black;
+    padding: 5px 10px;
+    border-radius:5px;
+}
+.customization__separator {
+    width: 2px;
+    background-color: black;
+    margin: 0 50px;
+}
+
